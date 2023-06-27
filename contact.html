@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Personal Information System</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+		<h1>Welcome to My Personal Information System</h1>
+		<nav>
+			<ul>
+				<li><a href="home.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="resume.html">Resume</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+        <h2>Contact Me</h2>
+        <form class="form" onsubmit="alert('Sent Succesfully!!!')">
+			<label for="name">Name</label>
+			<input type="text" id="name" required>
+			
+			<label for="email">Email</label>
+			<input type="text" id="email"required>
+			
+			<label for="message">Message</label>
+			<textarea id="message" placeholder="Type your message here" required></textarea>
+            <button type="submit" >Submit</button>
+        </form>
+	</main>
+	
+	<footer>
+        <p>&copy; 2023 My Personal Information System</p>
+    </footer>
+    
+
+</body>
+</html>
