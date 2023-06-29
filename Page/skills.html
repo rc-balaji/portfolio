@@ -1,54 +1,183 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>My Personal Information System</title>
+    <title>Document</title>
 	<link rel="stylesheet" href="style.css">
+    <style>
+        /* Internal CSS styles */
+        .Items {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin: 20px;
+        }
+        
+        .Items h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        
+        .Items ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        
+        
+        .Items ul li .portfolio__img {
+            max-width: 80px;
+            height: auto;
+            margin-right: 20px;
+        }
+        
+        .Items ul li .name {
+            font-weight: bold;
+        }
+        
+        .Items ul li .description {
+            display: none;
+        }
+        
+        .Items ul li:hover .description {
+            display: block;
+        }
+
+		.Items ul li {
+    font-size: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    width: 300px;
+    transition: all 0.2s ease; 
+}
+
+.Items ul li:hover {
+    transform: scale(1.05); 
+}
+
+    </style>
 </head>
 <body>
-	<header>
-		<h1>Welcome to My Personal Information System</h1>
-		<nav>
+    <header>
+        <h1>Welcome to My Personal Information System</h1>
+        <nav>
 			<ul>
 				<li><a href="home.html">Home</a></li>
 				<li><a href="about.html">About</a></li>
 				<li><a href="edu.html">Education</a></li>
 				<li><a href="skills.html">Skills</a></li>
 				
-                <li><a href="certifications.html">Achievements</a></li>
-                <li><a href="contact.html">Contact</a></li>
+				<li><a href="certifications.html">Achievements</a></li>
+				<li><a href="contact.html">Contact</a></li>
 			</ul>
 		</nav>
-	</header>
+    </header>
 
-	<h3>Programming Languages:-</h3>
-		<ul>
-			<li>Java</li>
-			<li>Python</li>
-			<li>C/C++</li>
-			<li>Javascript</li>
-		</ul>
-        <h3>Technical Skills:-</h3>
-		<ul>
-			<li>Full Stack Development</li>
-			<li>Internet of Things</li>
-			<li>Data Science</li>
-			<li>MERN stack + Electron</li>
-		</ul>
-	<h3>Projects:-</h3>
-		<ul>
-			<li>Mobile Application for Hospital Management system</li>
-			<li>Web Application for Seating Arrangement</li>
-			<li>Desktop Application for Machine Monitoring System</li>
-			<li>IoT Application for Temperature Monitoring </li>
-		</ul>
-		
-
-	
+    <div class="Items">
+        <h3>Programming Languages:</h3>
+        <ul>
+            <li>
+                <img src="java_pic.png" alt="" class="portfolio__img">
+                <div>
+                    <span class="name">Java</span>
+                    <span class="description">Java is a popular programming language that is known for its versatility and portability.</span>
+                </div>
+            </li>
+            <li>
+                <img src="python_pic.jpeg" alt="" class="portfolio__img">
+                <div>
+                    <span class="name">Python</span>
+                    <span class="description">Python is a high-level, interpreted programming language that emphasizes code readability and simplicity. </span>
+                </div>
+            </li>
+            <li>
+                <img src="c_cpp_pic.png" alt="" class="portfolio__img">
+                <div>
+                    <span class="name">C/C++</span>
+                    <span class="description">C/C++: C and C++ are closely related programming languages. C is a general-purpose, procedural programming language, while C++ is an extension of C that adds support for object-oriented programming.</span>
+                </div>
+            </li>
+            <li>
+                <img src="javascript_pic.png" alt="" class="portfolio__img">
+                <div>
+                    <span class="name">JavaScript</span>
+                    <span class="description">JavaScript is a high-level, interpreted programming language primarily used for developing interactive web pages and web applications.</span>
+                </div>
+            </li>
+        </ul>
+        
+        <h3>Technical Skills:</h3>
+        <ul>
+            <li>
+                <img src="full_stack_pic.png" alt="" class="portfolio__img">
+                <div>
+                    <span class="name">Full Stack Development</span>
+                    <span class="description">Full stack development refers to the practice of developing both the frontend (client-side) and backend (server-side) components of a web application.</span>
+                </div>
+            </li>
+            <li>
+                <img src="iot_pic.png" alt="" class="portfolio__img">
+                <div>
+                    <span class="name">Internet of Things</span>
+                    <span class="description"> IoT refers to a network of physical devices embedded with sensors, software, and connectivity capabilities that enables them to collect and exchange data over the internet.</span>
+                </div>
+            </li>
+            <li>
+                <img src="data_science_pic.png" alt="" class="portfolio__img">
+                <div>
+                    <span class="name">Data Science</span>
+                    <span class="description"> Data science is an interdisciplinary field that involves extracting insights and knowledge from data using various scientific methods, processes, algorithms, and tools.</span>
+                </div>
+            </li>
+            <li>
+                <img src="mern_stack_pic.png" alt="" class="portfolio__img">
+                <div>
+                    <span class="name">MERN stack + Electron</span>
+                    <span class="description">MERN is an acronym that stands for MongoDB, Express.js, React, and Node.js. It represents a popular stack of technologies used for developing web applications.</span>
+                </div>
+            </li>
+        </ul>
+        
+        <h3>Projects:</h3>
+        <ul>
+            <li>
+                <img src="hospital_management_pic.jpeg" alt="" class="portfolio__img">
+                <div>
+                    <span class="name">Mobile Application for Hospital Management System</span>
+                    <span class="description"> A Hospital Management System (HMS) is a software solution that streamlines and automates various administrative and operational tasks within a hospital or healthcare facility. It helps manage patient information, appointments, medical records, billing, inventory, and other essential aspects of hospital operations.</span>
+                </div>
+            </li>
+            <li>
+                <img src="seating_arrangement_pic.jpeg" alt="" class="portfolio__img">
+                <div>
+                    <span class="name">Web Application for Seating Arrangement</span>
+                    <span class="description">A seating arrangement refers to the organization and allocation of seats in a venue, such as a theater, auditorium, conference hall, or classroom. It involves assigning seats to individuals or groups to ensure proper seating arrangements and optimize space utilization.</span>
+                </div>
+            </li>
+            <li>
+                <img src="machine_monitoring_pic.jpeg" alt="" class="portfolio__img">
+                <div>
+                    <span class="name">Desktop Application for Machine Monitoring System</span>
+                    <span class="description"> A Machine Monitoring System is a software solution that tracks, monitors, and collects data from machines or equipment in real-time. It provides insights into machine performance, operational efficiency, and maintenance needs.</span>
+                </div>
+            </li>
+            <li>
+                <img src="iot_temperature_pic.png" alt="" class="portfolio__img">
+                <div>
+                    <span class="name">IoT Application for Temperature Monitoring</span>
+                    <span class="description">Temperature monitoring involves the measurement and tracking of temperature levels in real-time. It is a crucial aspect of many industries and applications, including healthcare, food storage, manufacturing, and environmental monitoring.</span>
+                </div>
+            </li>
+        </ul>
+    </div>
     
     <footer>
         <p>&copy; 2023 My Personal Information System</p>
     </footer>
-    
-    
 </body>
 </html>
